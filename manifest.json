@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "font patch for some fucking stupid sites",
+  "description": "This extension ",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.cc98.lifetoy.org/*", "*://*.baidu.com/*", "*://*.weibo.com/*", "*://*.renren.com/*"],
+      "css": ["font-patch.css"],
+	  "run_at" : "document_start"
+    }
+  ]
+}
